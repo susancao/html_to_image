@@ -27,6 +27,7 @@ defmodule HtmlToImage do
       "--format", Keyword.get(options, :format) || :jpg,
       "--width", Integer.to_string(Keyword.get(options, :width) || 1024),
       "--quality", Integer.to_string(Keyword.get(options, :quality) || 94),
+      "--dpi", Integer.to_string(Keyword.get(options, :dpi) || 600),
       "--enable-local-file-access",
       template_name,
       "-"
